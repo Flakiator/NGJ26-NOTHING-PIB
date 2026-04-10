@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dotlk3x70n3bh"]
 
 [ext_resource type="PackedScene" uid="uid://dc4tev0x8peey" path="res://Scenes/planet.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="3_wrm1d"]
+[ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=1159610107]
 
@@ -9,3 +11,15 @@ position = Vector2(-14, -873)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1485359933]
 zoom = Vector2(0.3, 0.3)
+
+[node name="Left_spawn" parent="Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
+position = Vector2(-4247, 640)
+scale = Vector2(1.0013498, 1.2761616)
+
+[node name="Right_spawn" parent="Camera2D" unique_id=1667484614 instance=ExtResource("3_wrm1d")]
+position = Vector2(245, -613)
+scale = Vector2(1, -1.2000042)
+
+[node name="Spawn_manager" type="Node2D" parent="." unique_id=984445264]
+script = ExtResource("4_3dryh")
+planet_scene = ExtResource("1_ebmjs")
