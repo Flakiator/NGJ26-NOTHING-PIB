@@ -6,6 +6,8 @@ var speed : Vector2 = Vector2(2, 1)
 var planet : Node2D = null
 @export var feet : Node2D
 
+@export var explosion : PackedScene
+
 var pressed = false
 
 func dragged(delta):
@@ -23,6 +25,11 @@ func jump(delta):
 	if Input.is_action_just_released("left_click") and pressed:
 		reparent(get_parent().get_parent())
 		speed = (global_position - planet.global_position).normalized()*80
+		var kaboom = explosion.instantiate()
+		kaboom.global_position = planet.global_position
+		kaboom.rotation = rotation
+		kaboom.scale = (planet.scale) * 2
+		planet.get_parent().get_parent().add_child(kaboom)
 		planet.free()
 		planet = null
 		pressed = false
