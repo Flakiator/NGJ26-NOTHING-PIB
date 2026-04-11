@@ -8,4 +8,4 @@ func _physics_process(delta: float) -> void:
 	var cat = get_overlapping_areas()[idx].get_parent()
 	if not cat.planet:
 		cat.rotation = (self.get_parent().global_position - cat.global_position).orthogonal().angle()
-		cat.speed += (get_parent().global_position - cat.position).normalized() * delta * .5
+		cat.speed += (get_parent().global_position - cat.global_position).normalized() * delta * 100

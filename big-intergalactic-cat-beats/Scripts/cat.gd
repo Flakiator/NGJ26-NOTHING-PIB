@@ -1,6 +1,6 @@
 extends Sprite2D
 
-var acc = 100
+var acc = 150
 var speed : Vector2 = Vector2(2, 1)
 
 var planet : Node2D = null
@@ -12,7 +12,7 @@ func dragged(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		speed += (get_global_mouse_position() - self.global_position).normalized()*delta*acc
 		
-	speed = speed.limit_length(100)
+	speed = speed.limit_length(200)
 	self.transform = self.transform.translated(speed*delta)
 
 
