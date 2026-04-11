@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6nmatwvdte08"
-path="res://.godot/imported/porple_planet.png-3156eabac8804bee84ccb1fc29f07624.ctex"
+uid="uid://bqghikhyj5hhq"
+path="res://.godot/imported/porple_planet.png-c357e256b410f11ab3b390ac46f53dee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/porple_planet.png"
-dest_files=["res://.godot/imported/porple_planet.png-3156eabac8804bee84ccb1fc29f07624.ctex"]
+source_file="res://Sprites/Planets/porple_planet.png"
+dest_files=["res://.godot/imported/porple_planet.png-c357e256b410f11ab3b390ac46f53dee.ctex"]
 
 [params]
 
