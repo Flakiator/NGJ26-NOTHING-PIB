@@ -26,13 +26,26 @@ func _process(delta: float) -> void:
 func spawn_planet():
 	if get_tree().get_first_node_in_group("player").planet: # no spawning if cat is on planet
 		return
-	if get_tree().get_node_count_in_group("planets") < no_of_planets:
+	var planets = get_tree().get_nodes_in_group("planets") 
+	if  planets.size() < no_of_planets:
 		var spawners = get_tree().get_nodes_in_group("spawner")
 		var spawner = spawners[get_spawner_from_direction()] # Spawn planet in the direction the player is heading
 		var pos = spawner.get_random_point()
 		var planet = planet_scene.instantiate()
 		planet.global_position = pos
-		get_parent().add_child(planet)
+		var valid = true
+		for p in planets:
+			if (p.global_position - pos).length() < 400:
+				print("not valid")
+				valid = false
+				break
+		
+		if valid:
+			get_parent().add_child(planet)
+		else:
+			planet.free()
+			spawn_planet()
+
 	
 func cleanup_planets():
 	var cam_pos = camera.global_position
