@@ -1,7 +1,13 @@
 [gd_scene format=3 uid="uid://dotlk3x70n3bh"]
 
+[ext_resource type="AudioStream" uid="uid://egf41q6alv6k" path="res://Audio/space_ambience.ogg" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://b2ki4gk8ilu8i" path="res://Scenes/cat.tscn" id="3_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=1159610107]
 
 [node name="Cat" parent="." unique_id=1220980816 instance=ExtResource("3_3dryh")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1825576993]
+stream = ExtResource("2_qxrlw")
+autoplay = true
+parameters/looping = true

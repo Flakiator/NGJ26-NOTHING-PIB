@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bu74mra7avieq"]
 
 [ext_resource type="Texture2D" uid="uid://7bpcph82ss3b" path="res://Sprites/temp_star.png" id="1_d0spr"]
-[ext_resource type="Script" uid="uid://b0b38t3r7ddxn" path="res://Scenes/star.gd" id="2_3vu41"]
+[ext_resource type="Script" path="res://Scripts/star.gd" id="2_3vu41"]
 
 [node name="Node2D2" type="Node2D" unique_id=1533371481]
 
