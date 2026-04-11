@@ -9,5 +9,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var cam = get_tree().get_first_node_in_group("camera")
 	var speed = cam.global_position - cam_pos 
-	self.transform = self.transform.translated(speed * speed_fraction)
+	global_position = global_position + speed * speed_fraction
 	cam_pos = cam.global_position
