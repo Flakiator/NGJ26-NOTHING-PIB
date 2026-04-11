@@ -21,7 +21,6 @@ func _process(delta: float) -> void:
 func spawn_planet():
 	var spawners = get_tree().get_nodes_in_group("spawner")
 	var spawner = spawners[randi() % spawners.size()]
-	print(spawner)
 	var pos = spawner.get_random_point()
 	var planet = planet_scene.instantiate()
 	planet.global_position = pos

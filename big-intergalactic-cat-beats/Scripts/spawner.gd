@@ -11,8 +11,8 @@ func _process(delta: float) -> void:
 
 func get_random_point():
 	var shape = $CollisionShape2D.shape
-	var extents = shape.extents
-	var local_point = Vector2(
-		randf_range(-extents.x, extents.x),
-		randf_range(-extents.y, extents.y))
-	return to_global(local_point)
+	var rect = $CollisionShape2D.shape.get_rect()
+	var x = randi_range(rect.position.x, rect.position.x+rect.size.x)
+	var y = randi_range(rect.position.y, rect.position.y+rect.size.y)
+	var rand_point = Vector2(x,y) 
+	return rand_point

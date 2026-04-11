@@ -5,7 +5,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0dymf"]
 
 [node name="Spawner" type="Node2D" unique_id=424036654]
-position = Vector2(-103, 47)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=474774312]
 script = ExtResource("1_2bop2")

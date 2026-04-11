@@ -9,17 +9,18 @@
 
 [node name="Cat" parent="." unique_id=1220980816 instance=ExtResource("3_3dryh")]
 position = Vector2(3, 5)
-scale = Vector2(1, 1.0101281)
+scale = Vector2(0.3673833, 0.3711042)
 
 [node name="Camera2D" type="Camera2D" parent="Cat" unique_id=1485359933]
 scale = Vector2(0.94243234, 0.94243234)
+limit_enabled = false
 
 [node name="Left_spawn" parent="Cat/Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
-position = Vector2(-906.166, -13.655701)
+position = Vector2(-3182.8193, -17.155573)
 scale = Vector2(1.0013498, 1.2761616)
 
 [node name="Right_spawn" parent="Cat/Camera2D" unique_id=1667484614 instance=ExtResource("3_wrm1d")]
-position = Vector2(965.58655, -1.9243271e-07)
+position = Vector2(2527.1934, 22.874092)
 scale = Vector2(1, -1.2000042)
 
 [node name="Spawn_manager" type="Node2D" parent="." unique_id=984445264]

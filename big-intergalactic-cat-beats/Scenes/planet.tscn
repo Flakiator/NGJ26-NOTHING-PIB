@@ -22,6 +22,7 @@ animations = [{
 }]
 
 [node name="planets" type="Node2D" unique_id=1501331527]
+scale = Vector2(0.48880696, 0.48880696)
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1870408139]
 scale = Vector2(-0.5, -0.5)
