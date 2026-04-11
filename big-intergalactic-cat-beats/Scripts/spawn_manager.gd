@@ -2,8 +2,8 @@ extends Node2D
 
 @export var planet_scene: PackedScene
 @export var spawn_interval := 1.5
+@export var camera: Camera2D
 
-@onready var camera = $"../Cat/Camera2D"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_loop()

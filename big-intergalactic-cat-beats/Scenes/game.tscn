@@ -1,41 +1,12 @@
 [gd_scene format=3 uid="uid://dotlk3x70n3bh"]
 
-[ext_resource type="PackedScene" uid="uid://dc4tev0x8peey" path="res://Scenes/planet.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://b2ki4gk8ilu8i" path="res://Scenes/cat.tscn" id="3_3dryh"]
-[ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="3_wrm1d"]
-[ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=1159610107]
 
 [node name="Cat" parent="." unique_id=1220980816 instance=ExtResource("3_3dryh")]
 position = Vector2(3, 5)
 scale = Vector2(0.3673833, 0.3711042)
-
-[node name="Camera2D" type="Camera2D" parent="Cat" unique_id=1485359933]
-scale = Vector2(0.94243234, 0.94243234)
-limit_enabled = false
-
-[node name="Top_spawn" parent="Cat/Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
-position = Vector2(-5.7764416, -2539.0244)
-rotation = -1.5577823
-scale = Vector2(1, 2.1465511)
-
-[node name="Left_spawn" parent="Cat/Camera2D" unique_id=1929836046 instance=ExtResource("3_wrm1d")]
-position = Vector2(-3182.8193, -17.155573)
-scale = Vector2(1.0013498, 1.2761616)
-
-[node name="Right_spawn" parent="Cat/Camera2D" unique_id=1667484614 instance=ExtResource("3_wrm1d")]
-position = Vector2(3185.7078, 102.93342)
-scale = Vector2(1, -1.2000042)
-
-[node name="Bottom_spawn" parent="Cat/Camera2D" unique_id=1074513343 instance=ExtResource("3_wrm1d")]
-position = Vector2(-8.664663, 2198.7725)
-rotation = -1.5730972
-scale = Vector2(1, 2.144223)
-
-[node name="Spawn_manager" type="Node2D" parent="." unique_id=984445264]
-script = ExtResource("4_3dryh")
-planet_scene = ExtResource("1_ebmjs")
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=1745322353]
 position = Vector2(-181, -170)
