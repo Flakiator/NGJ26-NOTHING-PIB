@@ -21,9 +21,11 @@ func _process(delta: float) -> void:
 	pass
 	
 func spawn_planet():
+	if get_tree().get_first_node_in_group("player").planet: # no spawning if cat is on planet
+		return
 	if get_tree().get_node_count_in_group("planets") < no_of_planets:
 		var spawners = get_tree().get_nodes_in_group("spawner")
-		var spawner = spawners[randi() % spawners.size()]
+		var spawner = spawners[get_spawner_from_direction()] # Switch to players direction
 		var pos = spawner.get_random_point()
 		var planet = planet_scene.instantiate()
 		planet.global_position = pos
@@ -34,3 +36,16 @@ func cleanup_planets():
 	for planet in get_tree().get_nodes_in_group("planets"):
 		if planet.global_position.distance_to(cam_pos) > 1000:
 			planet.queue_free()
+
+
+func get_spawner_from_direction():
+	var speed = get_tree().get_first_node_in_group("player").speed
+	if abs(speed.x) > abs(speed.y):
+		if speed.x < 0:
+			return 3
+		return 2
+	if speed.y < 0:
+		return 0
+	return 1
+		
+	

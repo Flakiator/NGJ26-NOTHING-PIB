@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b2ki4gk8ilu8i"]
 
 [ext_resource type="Script" uid="uid://b8h3epkclngse" path="res://Scripts/cat.gd" id="1_0xcsw"]
+[ext_resource type="Script" uid="uid://cy6bvvbaf4jfv" path="res://Scenes/camera.gd" id="5_mm0tc"]
 [ext_resource type="Texture2D" uid="uid://cj2tb1trbag12" path="res://Sprites/gatito.png" id="5_sdt0o"]
 [ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="7_mm0tc"]
 [ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="8_6bbg4"]
@@ -9,16 +10,9 @@
 [node name="Node2D" type="Node2D" unique_id=1220980816]
 
 [node name="gatito" type="Sprite2D" parent="." unique_id=986089347 groups=["player"]]
-position = Vector2(-96, -19)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("5_sdt0o")
 script = ExtResource("1_0xcsw")
-
-[node name="Camera2D" type="Camera2D" parent="gatito" unique_id=841647132]
-
-[node name="Top_spawn" parent="gatito/Camera2D" unique_id=424036654 instance=ExtResource("7_mm0tc")]
-position = Vector2(-6.1273575e-05, -2259.9998)
-rotation = 1.5707964
 
 [node name="Area2D" type="Area2D" parent="gatito" unique_id=1981761741]
 
@@ -29,5 +23,27 @@ polygon = PackedVector2Array(-99.58203, 49.791077, -497.91064, 199.16425, -647.2
 position = Vector2(-96, -19)
 script = ExtResource("8_6bbg4")
 planet_scene = ExtResource("9_77tsj")
-camera = NodePath("../gatito/Camera2D")
-no_of_planets = 2
+camera = NodePath("../Camera2D")
+no_of_planets = 10
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=841647132]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("5_mm0tc")
+
+[node name="Top_spawn" parent="Camera2D" unique_id=424036654 instance=ExtResource("7_mm0tc")]
+position = Vector2(0, -8000)
+rotation = 1.5707964
+scale = Vector2(1, 13)
+
+[node name="Bottom_spawn" parent="Camera2D" unique_id=1835331663 instance=ExtResource("7_mm0tc")]
+position = Vector2(0, 8000)
+rotation = 1.5707964
+scale = Vector2(1, 13)
+
+[node name="Right_spawn" parent="Camera2D" unique_id=974706343 instance=ExtResource("7_mm0tc")]
+position = Vector2(13000, 0)
+scale = Vector2(1, 8)
+
+[node name="Left_spawn" parent="Camera2D" unique_id=1081646555 instance=ExtResource("7_mm0tc")]
+position = Vector2(-13000, 0)
+scale = Vector2(1, 8)
