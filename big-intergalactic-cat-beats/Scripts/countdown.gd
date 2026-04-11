@@ -16,9 +16,12 @@ func set_score(score: int):
 	global_score = score
 
 func increase_score():
+	var planets = get_tree().get_first_node_in_group("planet_spawner")
+	var stars = get_tree().get_first_node_in_group("star_spawner")
+	print(stars)
 	global_score += 1
 	set_score(global_score)
 	if global_score > score_threshold:
-		get_tree().get_first_node_in_group("star_spawner").no_of_planets = 0
-	get_tree().get_first_node_in_group("star_spawner").spawn_interval += 0.02
-	print(get_tree().get_first_node_in_group("star_spawner").spawn_interval)
+		stars.no_of_planets = 0
+		planets.no_of_planets = 0
+	stars.spawn_interval += 0.02
