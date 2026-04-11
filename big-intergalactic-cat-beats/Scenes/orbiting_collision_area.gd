@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var cat : Polygon2D
+@export var cat : Sprite2D
 
 func _physics_process(delta: float) -> void:
 	if get_overlapping_areas().find_custom((func(a) : return a.get_parent() == cat)) == -1:

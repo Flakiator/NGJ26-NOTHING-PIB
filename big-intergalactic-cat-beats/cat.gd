@@ -1,4 +1,4 @@
-extends Polygon2D
+extends Sprite2D
 
 var acc = 2
 var speed : Vector2 = Vector2(2, 1)
