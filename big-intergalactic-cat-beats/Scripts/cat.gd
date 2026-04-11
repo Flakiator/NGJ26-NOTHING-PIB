@@ -26,6 +26,8 @@ func jump(delta):
 		planet.free()
 		planet = null
 		pressed = false
+		var countdown = get_tree().get_first_node_in_group("UI")
+		countdown.increase_score()
 		
 		change_texture("res://Sprites/Player_Nemotito/Nemo_Jump.PNG")
 		rotate((-PI/2) * .5)

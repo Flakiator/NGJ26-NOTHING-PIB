@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cwom1hslabfkw"]
+
+[ext_resource type="Script" uid="uid://b66wu1pye4yhe" path="res://Scripts/countdown.gd" id="1_jxero"]
+
+[node name="UI" type="Control" unique_id=571064923]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Planets_left" type="Label" parent="." unique_id=1787395470 groups=["UI"]]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 40
+text = "Planets:"
+script = ExtResource("1_jxero")
