@@ -19,13 +19,19 @@ func dragged(delta):
 func jump(delta):
 	if Input.is_action_just_pressed("left_click"):
 		pressed = true
+		change_texture("res://Sprites/Player_Nemotito/Nemo_Stand.PNG")
 	if Input.is_action_just_released("left_click") and pressed:
 		reparent(get_parent().get_parent())
 		speed = (global_position - planet.global_position).normalized()*80
 		planet.free()
 		planet = null
 		pressed = false
+		
+		change_texture("res://Sprites/Player_Nemotito/Nemo_Jump.PNG")
+		rotate((-PI/2) * .5)
+		await get_tree().create_timer(1).timeout
 		change_texture("res://Sprites/Player_Nemotito/Nemo_Float_Reach.PNG")
+
 		
 		
 
