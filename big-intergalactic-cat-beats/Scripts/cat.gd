@@ -7,7 +7,7 @@ var planet : Node2D = null
 @export var feet : Node2D
 
 var pressed = false
-
+var charge_timer : int
 func dragged(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		speed += (get_global_mouse_position() - self.global_position).normalized()*delta*acc
@@ -19,9 +19,11 @@ func dragged(delta):
 func jump(delta):
 	if Input.is_action_just_pressed("left_click"):
 		pressed = true
+		charge_timer = Time.get_ticks_msec()
 	if Input.is_action_just_released("left_click") and pressed:
+		var charge = min((Time.get_ticks_msec() - charge_timer) / 4, 1000)
 		reparent(get_parent().get_parent())
-		speed = (global_position - planet.global_position).normalized()*80
+		speed = (global_position - planet.global_position).normalized()*charge
 		planet.free()
 		planet = null
 		pressed = false
