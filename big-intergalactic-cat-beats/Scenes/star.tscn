@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://7bpcph82ss3b" path="res://Sprites/temp_star.png" id="1_d0spr"]
 [ext_resource type="Script" uid="uid://b0b38t3r7ddxn" path="res://Scenes/star.gd" id="2_3vu41"]
 
-[node name="Node2D" type="Node2D" unique_id=1533371481]
+[node name="Node2D2" type="Node2D" unique_id=1533371481]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634075781 groups=["stars"]]
 z_index = -1
