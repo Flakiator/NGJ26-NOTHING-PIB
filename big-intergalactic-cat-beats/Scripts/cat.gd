@@ -27,6 +27,8 @@ func jump(delta):
 		planet.free()
 		planet = null
 		pressed = false
+		var countdown = get_tree().get_first_node_in_group("UI")
+		countdown.increase_score()
 		
 		
 
