@@ -1,78 +1,24 @@
 [gd_scene format=3 uid="uid://b2ki4gk8ilu8i"]
 
 [ext_resource type="Script" uid="uid://b8h3epkclngse" path="res://Scripts/cat.gd" id="1_0xcsw"]
-[ext_resource type="Texture2D" uid="uid://8v2m6tqfnx3y" path="res://Sprites/earth.png" id="2_23j0x"]
-[ext_resource type="Script" uid="uid://umnegqls3yn" path="res://Scripts/earth.gd" id="3_r2uub"]
-[ext_resource type="Script" uid="uid://dv46ht0ek2axf" path="res://Scripts/landed_collision_area.gd" id="4_mffg0"]
-[ext_resource type="Script" uid="uid://csmftv5478vmn" path="res://Scripts/orbiting_collision_area.gd" id="5_mffg0"]
 [ext_resource type="Texture2D" uid="uid://cj2tb1trbag12" path="res://Sprites/gatito.png" id="5_sdt0o"]
 [ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="7_mm0tc"]
 [ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="8_6bbg4"]
 [ext_resource type="PackedScene" uid="uid://dc4tev0x8peey" path="res://Scenes/planet.tscn" id="9_77tsj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_23j0x"]
-radius = 759.22
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_r2uub"]
-radius = 1500.0
-
-[sub_resource type="GDScript" id="GDScript_sdt0o"]
-script/source = "extends CollisionShape2D
-"
-
 [node name="Node2D" type="Node2D" unique_id=1220980816]
 
-[node name="Earth" type="Sprite2D" parent="." unique_id=1267137875]
-position = Vector2(18.000008, 56.999996)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("2_23j0x")
-script = ExtResource("3_r2uub")
-
-[node name="landed_collision_area" type="Area2D" parent="Earth" unique_id=1149662080 node_paths=PackedStringArray("cat")]
-script = ExtResource("4_mffg0")
-cat = NodePath("../../gatito")
-
-[node name="landed_collision_body" type="CollisionShape2D" parent="Earth/landed_collision_area" unique_id=914397407]
-scale = Vector2(0.99999994, 0.99999994)
-shape = SubResource("CircleShape2D_23j0x")
-
-[node name="orbiting_collision_area" type="Area2D" parent="Earth" unique_id=627095081 node_paths=PackedStringArray("cat")]
-script = ExtResource("5_mffg0")
-cat = NodePath("../../gatito")
-
-[node name="orbiting_collision_body" type="CollisionShape2D" parent="Earth/orbiting_collision_area" unique_id=741884632]
-scale = Vector2(0.99999994, 0.99999994)
-shape = SubResource("CircleShape2D_r2uub")
-script = SubResource("GDScript_sdt0o")
-
-[node name="gatito" type="Sprite2D" parent="." unique_id=986089347]
+[node name="gatito" type="Sprite2D" parent="." unique_id=986089347 groups=["player"]]
 position = Vector2(-96, -19)
-scale = Vector2(0.020083927, 0.02008393)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("5_sdt0o")
 script = ExtResource("1_0xcsw")
 
 [node name="Camera2D" type="Camera2D" parent="gatito" unique_id=841647132]
-position = Vector2(-99.58202, -49.791008)
-scale = Vector2(199.1642, 199.16417)
-zoom = Vector2(1.5, 1.5)
 
 [node name="Top_spawn" parent="gatito/Camera2D" unique_id=424036654 instance=ExtResource("7_mm0tc")]
-position = Vector2(-5.7764416, -2539.0244)
-rotation = -1.5577823
-scale = Vector2(1, 2.1465511)
-
-[node name="Left_spawn" parent="gatito/Camera2D" unique_id=306639046 instance=ExtResource("7_mm0tc")]
-position = Vector2(-3182.8193, -17.155573)
-scale = Vector2(1.0013498, 1.2761616)
-
-[node name="Right_spawn" parent="gatito/Camera2D" unique_id=2100055763 instance=ExtResource("7_mm0tc")]
-position = Vector2(3185.7078, 102.93342)
-scale = Vector2(1, -1.2000042)
-
-[node name="Bottom_spawn" parent="gatito/Camera2D" unique_id=1594115467 instance=ExtResource("7_mm0tc")]
-position = Vector2(-8.664663, 2198.7725)
-rotation = -1.5730972
-scale = Vector2(1, 2.144223)
+position = Vector2(-6.1273575e-05, -2259.9998)
+rotation = 1.5707964
 
 [node name="Area2D" type="Area2D" parent="gatito" unique_id=1981761741]
 
@@ -81,7 +27,6 @@ polygon = PackedVector2Array(-99.58203, 49.791077, -497.91064, 199.16425, -647.2
 
 [node name="Spawn_manager" type="Node2D" parent="." unique_id=198772676 node_paths=PackedStringArray("camera")]
 position = Vector2(-96, -19)
-scale = Vector2(0.020083927, 0.02008393)
 script = ExtResource("8_6bbg4")
 planet_scene = ExtResource("9_77tsj")
 camera = NodePath("../gatito/Camera2D")

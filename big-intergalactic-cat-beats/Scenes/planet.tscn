@@ -1,41 +1,38 @@
 [gd_scene format=3 uid="uid://dc4tev0x8peey"]
 
-[ext_resource type="Script" uid="uid://cml2vplw70dju" path="res://Scripts/planet.gd" id="1_vpe2g"]
 [ext_resource type="Texture2D" uid="uid://8v2m6tqfnx3y" path="res://Sprites/earth.png" id="1_xehyc"]
+[ext_resource type="Script" uid="uid://umnegqls3yn" path="res://Scripts/earth.gd" id="2_ytj11"]
+[ext_resource type="Script" uid="uid://dv46ht0ek2axf" path="res://Scripts/landed_collision_area.gd" id="3_skk7a"]
+[ext_resource type="Script" uid="uid://csmftv5478vmn" path="res://Scripts/orbiting_collision_area.gd" id="4_qm2km"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vpe2g"]
-radius = 772.03174
+[sub_resource type="CircleShape2D" id="CircleShape2D_kmany"]
+radius = 759.22
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m0iey"]
-atlas = ExtResource("1_xehyc")
-region = Rect2(0, 0, 1600, 1600)
+[sub_resource type="CircleShape2D" id="CircleShape2D_w18ph"]
+radius = 1500.0
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ytj11"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m0iey")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="GDScript" id="GDScript_hjx7e"]
+script/source = "extends CollisionShape2D
+"
 
-[node name="planets" type="Node2D" unique_id=1501331527]
-scale = Vector2(0.48880696, 0.48880696)
+[node name="Node2D" type="Node2D" unique_id=1317756009]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1870408139]
-scale = Vector2(-0.5, -0.5)
-input_pickable = true
-script = ExtResource("1_vpe2g")
+[node name="Earth" type="Sprite2D" parent="." unique_id=779517482]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_xehyc")
+script = ExtResource("2_ytj11")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=860492062]
-scale = Vector2(-0.5, -0.5)
-shape = SubResource("CircleShape2D_vpe2g")
+[node name="landed_collision_area" type="Area2D" parent="Earth" unique_id=1617969176]
+script = ExtResource("3_skk7a")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatableBody2D" unique_id=1078299718]
-scale = Vector2(-0.5, -0.5)
-sprite_frames = SubResource("SpriteFrames_ytj11")
-autoplay = "default"
+[node name="landed_collision_body" type="CollisionShape2D" parent="Earth/landed_collision_area" unique_id=1891720747]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_kmany")
 
-[connection signal="input_event" from="AnimatableBody2D" to="AnimatableBody2D" method="_on_input_event"]
+[node name="orbiting_collision_area" type="Area2D" parent="Earth" unique_id=1994904888]
+script = ExtResource("4_qm2km")
+
+[node name="orbiting_collision_body" type="CollisionShape2D" parent="Earth/orbiting_collision_area" unique_id=2024800006]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_w18ph")
+script = SubResource("GDScript_hjx7e")

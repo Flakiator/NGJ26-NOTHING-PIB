@@ -12,7 +12,7 @@ func spawn_loop():
 	while true:
 		await get_tree().create_timer(spawn_interval).timeout
 		spawn_planet()
-		cleanup_planets()
+		#cleanup_planets()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -24,7 +24,7 @@ func spawn_planet():
 	var pos = spawner.get_random_point()
 	var planet = planet_scene.instantiate()
 	planet.global_position = pos
-	add_child(planet)
+	get_parent().add_child(planet)
 	
 func cleanup_planets():
 	var cam_pos = camera.global_position
