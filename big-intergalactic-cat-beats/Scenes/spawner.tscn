@@ -5,11 +5,12 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0dymf"]
 
 [node name="Spawner" type="Node2D" unique_id=424036654]
+position = Vector2(-103, 47)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=474774312]
 script = ExtResource("1_2bop2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1154531080]
-position = Vector2(2037, -495)
+position = Vector2(7, 1.9999998)
 scale = Vector2(5.2047286, 85.50615)
 shape = SubResource("RectangleShape2D_0dymf")

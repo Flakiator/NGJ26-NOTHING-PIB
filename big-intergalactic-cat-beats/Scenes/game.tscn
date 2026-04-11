@@ -7,22 +7,19 @@
 
 [node name="Game" type="Node2D" unique_id=1159610107]
 
-[node name="Planets" parent="." unique_id=1501331527 instance=ExtResource("1_ebmjs")]
-position = Vector2(-14, -873)
-
 [node name="Cat" parent="." unique_id=1220980816 instance=ExtResource("3_3dryh")]
 position = Vector2(3, 5)
 scale = Vector2(1, 1.0101281)
 
 [node name="Camera2D" type="Camera2D" parent="Cat" unique_id=1485359933]
-zoom = Vector2(0.3, 0.3)
+scale = Vector2(0.94243234, 0.94243234)
 
 [node name="Left_spawn" parent="Cat/Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
-position = Vector2(-4247, 640)
+position = Vector2(-906.166, -13.655701)
 scale = Vector2(1.0013498, 1.2761616)
 
 [node name="Right_spawn" parent="Cat/Camera2D" unique_id=1667484614 instance=ExtResource("3_wrm1d")]
-position = Vector2(245, -613)
+position = Vector2(965.58655, -1.9243271e-07)
 scale = Vector2(1, -1.2000042)
 
 [node name="Spawn_manager" type="Node2D" parent="." unique_id=984445264]
