@@ -15,14 +15,28 @@ scale = Vector2(0.3673833, 0.3711042)
 scale = Vector2(0.94243234, 0.94243234)
 limit_enabled = false
 
-[node name="Left_spawn" parent="Cat/Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
+[node name="Top_spawn" parent="Cat/Camera2D" unique_id=424036654 instance=ExtResource("3_wrm1d")]
+position = Vector2(-5.7764416, -2539.0244)
+rotation = -1.5577823
+scale = Vector2(1, 2.1465511)
+
+[node name="Left_spawn" parent="Cat/Camera2D" unique_id=1929836046 instance=ExtResource("3_wrm1d")]
 position = Vector2(-3182.8193, -17.155573)
 scale = Vector2(1.0013498, 1.2761616)
 
 [node name="Right_spawn" parent="Cat/Camera2D" unique_id=1667484614 instance=ExtResource("3_wrm1d")]
-position = Vector2(2527.1934, 22.874092)
+position = Vector2(3185.7078, 102.93342)
 scale = Vector2(1, -1.2000042)
+
+[node name="Bottom_spawn" parent="Cat/Camera2D" unique_id=1074513343 instance=ExtResource("3_wrm1d")]
+position = Vector2(-8.664663, 2198.7725)
+rotation = -1.5730972
+scale = Vector2(1, 2.144223)
 
 [node name="Spawn_manager" type="Node2D" parent="." unique_id=984445264]
 script = ExtResource("4_3dryh")
 planet_scene = ExtResource("1_ebmjs")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1745322353]
+position = Vector2(-181, -170)
+polygon = PackedVector2Array(127, -52, -27, -49, -121, 36, 9, 61)

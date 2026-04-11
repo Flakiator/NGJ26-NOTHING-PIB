@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.x += speed * delta
+	pass
 
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
