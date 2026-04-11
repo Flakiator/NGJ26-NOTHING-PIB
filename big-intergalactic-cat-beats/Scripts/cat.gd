@@ -10,7 +10,7 @@ var pressed = false
 
 func dragged(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		speed += (get_global_mouse_position() - self.position).normalized()*delta
+		speed += (get_global_mouse_position() - self.global_position).normalized()*delta
 		
 	speed = speed.limit_length(1)
 	self.transform = self.transform.translated(speed)
