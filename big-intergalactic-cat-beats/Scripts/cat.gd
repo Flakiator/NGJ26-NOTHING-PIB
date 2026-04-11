@@ -25,6 +25,7 @@ func jump(delta):
 		planet.free()
 		planet = null
 		pressed = false
+		change_texture("res://Sprites/Player_Nemotito/Nemo_Float_Reach.PNG")
 		
 		
 
@@ -34,7 +35,8 @@ func _process(delta: float) -> void:
 	else:
 		jump(delta)
 	
-
+func change_texture(s: String):
+	texture = load(s)
 	#else:
 		#self.rotation = planet.rotation
 		#self.position = self.position + ((planet.position - self.position + Vector2(0, 40))).rotated(planet.rotation) - (self.feet.global_position - self.global_position)
