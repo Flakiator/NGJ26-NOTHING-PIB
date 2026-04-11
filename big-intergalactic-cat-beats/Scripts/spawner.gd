@@ -12,9 +12,7 @@ func _process(delta: float) -> void:
 
 func get_random_point():
 	var rect = collider.shape.get_rect()
-	print(rect.size)
-	print(global_scale)
-	print(global_position)
+
 	var x = randi_range(0, rect.size.x*global_scale.x)
 	var y = randi_range(0, rect.size.y*global_scale.y)
 	var rand_point = global_position + Vector2(x,y) 

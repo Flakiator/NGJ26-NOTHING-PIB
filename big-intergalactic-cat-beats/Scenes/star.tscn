@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bu74mra7avieq"]
+
+[ext_resource type="Texture2D" uid="uid://7bpcph82ss3b" path="res://Sprites/temp_star.png" id="1_d0spr"]
+
+[node name="Node2D" type="Node2D" unique_id=1533371481]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634075781]
+z_index = -1
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("1_d0spr")
