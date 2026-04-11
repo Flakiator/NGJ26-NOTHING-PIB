@@ -28,6 +28,7 @@ spawn_interval = 10
 no_of_planets = 10
 spawn_distance = 400
 camera = NodePath("../Camera2D")
+planet_group = "planets"
 
 [node name="Star_spawn_manager" type="Node2D" parent="." unique_id=791908367 node_paths=PackedStringArray("camera")]
 position = Vector2(-96, -19)
@@ -37,6 +38,7 @@ spawn_interval = 1
 no_of_planets = 80
 spawn_distance = 10
 camera = NodePath("../Camera2D")
+planet_group = "stars"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=841647132]
 script = ExtResource("5_mm0tc")
