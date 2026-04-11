@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dc4tev0x8peey"]
 
-[ext_resource type="Texture2D" uid="uid://8v2m6tqfnx3y" path="res://Sprites/earth.png" id="1_xehyc"]
+[ext_resource type="Texture2D" path="res://Sprites/porple_planet.png" id="1_ytj11"]
 [ext_resource type="Script" uid="uid://umnegqls3yn" path="res://Scripts/earth.gd" id="2_ytj11"]
 [ext_resource type="Script" uid="uid://dv46ht0ek2axf" path="res://Scripts/landed_collision_area.gd" id="3_skk7a"]
 [ext_resource type="Script" uid="uid://csmftv5478vmn" path="res://Scripts/orbiting_collision_area.gd" id="4_qm2km"]
@@ -19,14 +19,15 @@ script/source = "extends CollisionShape2D
 
 [node name="Earth" type="Sprite2D" parent="." unique_id=779517482 groups=["planets"]]
 scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_xehyc")
+texture = ExtResource("1_ytj11")
 script = ExtResource("2_ytj11")
 
 [node name="landed_collision_area" type="Area2D" parent="Earth" unique_id=1617969176]
 script = ExtResource("3_skk7a")
 
 [node name="landed_collision_body" type="CollisionShape2D" parent="Earth/landed_collision_area" unique_id=1891720747]
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(20, 20)
+scale = Vector2(0.9, 0.9)
 shape = SubResource("CircleShape2D_kmany")
 
 [node name="orbiting_collision_area" type="Area2D" parent="Earth" unique_id=1994904888]
