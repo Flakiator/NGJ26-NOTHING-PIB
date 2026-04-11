@@ -17,7 +17,7 @@ script/source = "extends CollisionShape2D
 
 [node name="Node2D" type="Node2D" unique_id=1317756009]
 
-[node name="Earth" type="Sprite2D" parent="." unique_id=779517482]
+[node name="Earth" type="Sprite2D" parent="." unique_id=779517482 groups=["planets"]]
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("1_xehyc")
 script = ExtResource("2_ytj11")

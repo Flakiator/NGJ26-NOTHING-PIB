@@ -4,6 +4,8 @@ extends Node2D
 @export var spawn_interval := 1.5
 @export var camera: Camera2D
 
+@export var no_of_planets: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_loop()
@@ -12,22 +14,23 @@ func spawn_loop():
 	while true:
 		await get_tree().create_timer(spawn_interval).timeout
 		spawn_planet()
-		#cleanup_planets()
+		cleanup_planets()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 	
 func spawn_planet():
-	var spawners = get_tree().get_nodes_in_group("spawner")
-	var spawner = spawners[randi() % spawners.size()]
-	var pos = spawner.get_random_point()
-	var planet = planet_scene.instantiate()
-	planet.global_position = pos
-	get_parent().add_child(planet)
+	if get_tree().get_node_count_in_group("planets") < no_of_planets:
+		var spawners = get_tree().get_nodes_in_group("spawner")
+		var spawner = spawners[randi() % spawners.size()]
+		var pos = spawner.get_random_point()
+		var planet = planet_scene.instantiate()
+		planet.global_position = pos
+		get_parent().add_child(planet)
 	
 func cleanup_planets():
 	var cam_pos = camera.global_position
-	for planet in get_children():
-		if planet.global_position.distance_to(cam_pos) > 2000:
+	for planet in get_tree().get_nodes_in_group("planets"):
+		if planet.global_position.distance_to(cam_pos) > 1000:
 			planet.queue_free()

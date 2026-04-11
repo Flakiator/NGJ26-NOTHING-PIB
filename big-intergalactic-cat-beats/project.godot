@@ -18,6 +18,7 @@ config/icon="res://Sprites/icon.svg"
 [global_group]
 
 player=""
+planets=""
 
 [input]
 
