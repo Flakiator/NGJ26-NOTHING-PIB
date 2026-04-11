@@ -20,6 +20,7 @@ config/icon="res://Sprites/icon.svg"
 player=""
 planets=""
 stars=""
+camera=""
 
 [input]
 

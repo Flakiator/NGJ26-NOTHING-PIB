@@ -40,7 +40,7 @@ spawn_distance = 10
 camera = NodePath("../Camera2D")
 planet_group = "stars"
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=841647132]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=841647132 groups=["camera"]]
 script = ExtResource("5_mm0tc")
 
 [node name="Top_spawn" parent="Camera2D" unique_id=424036654 instance=ExtResource("7_mm0tc")]
