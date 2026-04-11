@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b2ki4gk8ilu8i"]
 
 [ext_resource type="Script" uid="uid://b8h3epkclngse" path="res://Scripts/cat.gd" id="1_0xcsw"]
+[ext_resource type="PackedScene" uid="uid://cwom1hslabfkw" path="res://Scenes/ui.tscn" id="3_wfgnv"]
 [ext_resource type="Script" uid="uid://cy6bvvbaf4jfv" path="res://Scripts/camera.gd" id="5_mm0tc"]
 [ext_resource type="Texture2D" uid="uid://cj2tb1trbag12" path="res://Sprites/gatito.png" id="5_sdt0o"]
 [ext_resource type="PackedScene" uid="uid://bu74mra7avieq" path="res://Scenes/star.tscn" id="5_wfgnv"]
@@ -58,3 +59,9 @@ scale = Vector2(5, 35)
 [node name="Left_spawn" parent="Camera2D" unique_id=1081646555 instance=ExtResource("7_mm0tc")]
 position = Vector2(-710, -350)
 scale = Vector2(5, 35)
+
+[node name="UI" parent="Camera2D" unique_id=571064923 instance=ExtResource("3_wfgnv")]
+offset_left = -567.0
+offset_top = -316.99997
+offset_right = -567.0
+offset_bottom = -316.99997

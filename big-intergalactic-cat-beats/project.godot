@@ -21,6 +21,7 @@ player=""
 planets=""
 stars=""
 camera=""
+UI=""
 
 [input]
 
