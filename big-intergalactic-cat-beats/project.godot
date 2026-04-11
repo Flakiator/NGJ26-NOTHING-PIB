@@ -23,6 +23,7 @@ stars=""
 camera=""
 UI=""
 star_spawner=""
+planet_spawner=""
 
 [input]
 
