@@ -25,17 +25,17 @@ polygon = PackedVector2Array(-99.58203, 49.791077, -497.91064, 199.16425, -647.2
 position = Vector2(-96, -19)
 script = ExtResource("8_6bbg4")
 planet_scene = ExtResource("9_77tsj")
-spawn_interval = 10
+spawn_interval = 8.0
 no_of_planets = 10
 spawn_distance = 400
 camera = NodePath("../Camera2D")
 planet_group = "planets"
 
-[node name="Star_spawn_manager" type="Node2D" parent="." unique_id=791908367 node_paths=PackedStringArray("camera")]
+[node name="Star_spawn_manager" type="Node2D" parent="." unique_id=791908367 node_paths=PackedStringArray("camera") groups=["star_spawner"]]
 position = Vector2(-96, -19)
 script = ExtResource("8_6bbg4")
 planet_scene = ExtResource("5_wfgnv")
-spawn_interval = 1
+spawn_interval = 0.04
 no_of_planets = 1000
 spawn_distance = 10
 camera = NodePath("../Camera2D")

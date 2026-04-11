@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var planet_scene: PackedScene
-@export var spawn_interval: int
+@export var spawn_interval: float
 @export var no_of_planets: int
 @export var spawn_distance: int
 @export var camera: Camera2D
