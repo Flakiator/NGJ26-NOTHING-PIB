@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var planet_scene: PackedScene
-@export var spawn_interval := 1.5
+@export var spawn_interval := 10
 @export var camera: Camera2D
 
 @export var no_of_planets: int
@@ -10,7 +10,10 @@ extends Node2D
 func _ready() -> void:
 	spawn_loop()
 
-func spawn_loop():
+func spawn_loop():		
+	await get_tree().create_timer(1).timeout # spawn 1 planet at start
+	spawn_planet()
+	
 	while true:
 		await get_tree().create_timer(spawn_interval).timeout
 		spawn_planet()
@@ -25,7 +28,7 @@ func spawn_planet():
 		return
 	if get_tree().get_node_count_in_group("planets") < no_of_planets:
 		var spawners = get_tree().get_nodes_in_group("spawner")
-		var spawner = spawners[get_spawner_from_direction()] # Switch to players direction
+		var spawner = spawners[get_spawner_from_direction()] # Spawn planet in the direction the player is heading
 		var pos = spawner.get_random_point()
 		var planet = planet_scene.instantiate()
 		planet.global_position = pos
