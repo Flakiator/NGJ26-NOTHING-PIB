@@ -1,7 +1,7 @@
 extends Sprite2D
 
 var files = [
-	preload("res://Sprites/Planets/earth.PNG"),
+	(preload("res://Sprites/Planets/earth.PNG")),
 	preload("res://Sprites/Planets/porple_planet.png"),
 	preload("res://Sprites/Planets/planet_bubble.PNG"),
 	preload("res://Sprites/Planets/planet_blue.PNG"),
