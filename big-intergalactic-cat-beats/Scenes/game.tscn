@@ -13,6 +13,7 @@
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1825576993 groups=["audio_streamers"]]
 stream = ExtResource("2_qxrlw")
+volume_db = -20.0
 autoplay = true
 parameters/looping = true
 script = ExtResource("3_wrm1d")
