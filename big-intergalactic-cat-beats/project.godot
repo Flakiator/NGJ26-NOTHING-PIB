@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="big-intergalactic-cat-beats"
-run/main_scene="uid://dotlk3x70n3bh"
+run/main_scene="uid://hy8uyt0g7qi2"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Sprites/icon.svg"
 

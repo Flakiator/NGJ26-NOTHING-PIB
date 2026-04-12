@@ -1,3 +1,50 @@
 [gd_scene format=3 uid="uid://hy8uyt0g7qi2"]
 
+[ext_resource type="Texture2D" uid="uid://bkuu645yvuop5" path="res://Sprites/Frames/Nemo0.PNG" id="1_alxvg"]
+[ext_resource type="Texture2D" uid="uid://b3ek4ufmfmxws" path="res://Sprites/Frames/Nemo1.PNG" id="2_geirw"]
+[ext_resource type="Texture2D" uid="uid://cdie6kcr1nesi" path="res://Sprites/Frames/Nemo2.PNG" id="3_hwjxs"]
+[ext_resource type="Script" uid="uid://rk00pwa6s3vu" path="res://Scripts/intro_animation.gd" id="4_geirw"]
+[ext_resource type="AudioStream" uid="uid://dkrrn514nsw76" path="res://Audio/lullaby.mp3" id="5_rsiac"]
+[ext_resource type="Script" uid="uid://dh0pd4frdlwha" path="res://Scripts/intro_cam.gd" id="6_3bmuq"]
+[ext_resource type="PackedScene" uid="uid://dotlk3x70n3bh" path="res://Scenes/game.tscn" id="7_3bmuq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rsiac"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_alxvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_geirw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hwjxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_geirw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
 [node name="Node2D" type="Node2D" unique_id=783891151]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=394130492]
+scale = Vector2(0.6148149, 0.61481476)
+sprite_frames = SubResource("SpriteFrames_rsiac")
+frame_progress = 0.7727503
+script = ExtResource("4_geirw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=818619323]
+stream = ExtResource("5_rsiac")
+autoplay = true
+
+[node name="Zoom_to_point" type="Node2D" parent="." unique_id=1537006211]
+position = Vector2(-96, 65)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2016892429 node_paths=PackedStringArray("zoom_to", "audio")]
+script = ExtResource("6_3bmuq")
+zoom_to = NodePath("../Zoom_to_point")
+audio = NodePath("../AudioStreamPlayer")
+game = ExtResource("7_3bmuq")
