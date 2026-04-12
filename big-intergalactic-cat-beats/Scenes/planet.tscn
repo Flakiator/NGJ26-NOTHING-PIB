@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dc4tev0x8peey"]
 
-[ext_resource type="Texture2D" path="res://Sprites/porple_planet.png" id="1_ytj11"]
+[ext_resource type="Texture2D" uid="uid://bqghikhyj5hhq" path="res://Sprites/Planets/porple_planet.png" id="1_ytj11"]
 [ext_resource type="Script" uid="uid://umnegqls3yn" path="res://Scripts/earth.gd" id="2_ytj11"]
 [ext_resource type="Script" uid="uid://dv46ht0ek2axf" path="res://Scripts/landed_collision_area.gd" id="3_skk7a"]
 [ext_resource type="Script" uid="uid://csmftv5478vmn" path="res://Scripts/orbiting_collision_area.gd" id="4_qm2km"]
