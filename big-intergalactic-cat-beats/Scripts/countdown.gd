@@ -23,7 +23,7 @@ func increase_score():
 	if global_score >= score_threshold:
 		stars.no_of_planets = 0
 		planets.no_of_planets = 0
-		await get_tree().create_timer(3).timeout
+		await get_tree().create_timer(10).timeout
 		get_parent().add_child(animation_scene.instantiate())
 	stars.spawn_interval += 0.02
 	
