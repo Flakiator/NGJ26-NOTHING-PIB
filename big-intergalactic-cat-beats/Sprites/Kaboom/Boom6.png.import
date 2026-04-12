@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj2tb1trbag12"
-path="res://.godot/imported/gatito.png-f0ff9f8100d55a3e50aacbc23284f37d.ctex"
+uid="uid://bbjlpi6lhv1wt"
+path="res://.godot/imported/Boom6.png-36e6a9696d7d7f646537396ec90c1806.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/gatito.png"
-dest_files=["res://.godot/imported/gatito.png-f0ff9f8100d55a3e50aacbc23284f37d.ctex"]
+source_file="res://Sprites/Kaboom/Boom6.png"
+dest_files=["res://.godot/imported/Boom6.png-36e6a9696d7d7f646537396ec90c1806.ctex"]
 
 [params]
 

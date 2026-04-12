@@ -1,6 +1,7 @@
 extends Label
 
 @export var global_score = 0
+var score_threshold = 10
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_score(global_score)
@@ -15,5 +16,12 @@ func set_score(score: int):
 	global_score = score
 
 func increase_score():
+	var planets = get_tree().get_first_node_in_group("planet_spawner")
+	var stars = get_tree().get_first_node_in_group("star_spawner")
+	print(stars)
 	global_score += 1
 	set_score(global_score)
+	if global_score > score_threshold:
+		stars.no_of_planets = 0
+		planets.no_of_planets = 0
+	stars.spawn_interval += 0.02
