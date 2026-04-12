@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://yjiw0s4laruu"]
+
+[ext_resource type="Texture2D" uid="uid://gvl3kid2yjpo" path="res://Sprites/Planets/planet_sauron.PNG" id="1_7822d"]
+[ext_resource type="Script" uid="uid://umnegqls3yn" path="res://Scripts/earth.gd" id="2_nd0ln"]
+[ext_resource type="Script" uid="uid://dv46ht0ek2axf" path="res://Scripts/landed_collision_area.gd" id="3_j26hq"]
+[ext_resource type="Script" uid="uid://csmftv5478vmn" path="res://Scripts/orbiting_collision_area.gd" id="4_n4552"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oa32g"]
+radius = 759.22
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_acg2p"]
+radius = 1500.0
+
+[sub_resource type="GDScript" id="GDScript_8j3vv"]
+script/source = "extends CollisionShape2D
+"
+
+[node name="Node2D" type="Node2D" unique_id=1317756009]
+
+[node name="Earth" type="Sprite2D" parent="." unique_id=779517482 groups=["planets"]]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_7822d")
+script = ExtResource("2_nd0ln")
+
+[node name="landed_collision_area" type="Area2D" parent="Earth" unique_id=1568517250]
+position = Vector2(2.2737368e-13, 1.9073486e-06)
+scale = Vector2(0.22257797, 0.22257797)
+script = ExtResource("3_j26hq")
+
+[node name="landed_collision_body" type="CollisionShape2D" parent="Earth/landed_collision_area" unique_id=315170227]
+position = Vector2(20, 20)
+scale = Vector2(0.9, 0.9)
+shape = SubResource("CircleShape2D_oa32g")
+
+[node name="orbiting_collision_area" type="Area2D" parent="Earth" unique_id=883564419]
+scale = Vector2(0.25870967, 0.25870967)
+script = ExtResource("4_n4552")
+
+[node name="orbiting_collision_body" type="CollisionShape2D" parent="Earth/orbiting_collision_area" unique_id=268380865]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_acg2p")
+script = SubResource("GDScript_8j3vv")
