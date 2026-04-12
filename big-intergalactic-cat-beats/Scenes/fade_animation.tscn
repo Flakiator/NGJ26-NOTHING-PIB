@@ -29,6 +29,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_x8706"]
 resource_name = "fade_to_black"
@@ -56,6 +68,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_id46e"]
@@ -89,14 +113,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+localize_numeral_system = false
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1791266774]
-top_level = true
 z_index = 2
-position = Vector2(600, 326)
 texture = ExtResource("2_x8706")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1497571645]
+modulate = Color(1, 1, 1, 0)
 visibility_layer = 2
 z_index = 1
 layout_mode = 1
@@ -105,6 +129,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=902540074]
 libraries/ = SubResource("AnimationLibrary_id46e")
