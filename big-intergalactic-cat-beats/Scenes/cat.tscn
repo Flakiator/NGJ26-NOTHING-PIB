@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://cwvxbbfrg6lrl" path="res://Sprites/Player_Nemotito/Nemo_Float_Reach.PNG" id="1_mm0tc"]
 [ext_resource type="PackedScene" uid="uid://dq4wy34x3p1pn" path="res://Scenes/kaboom.tscn" id="3_6bbg4"]
 [ext_resource type="PackedScene" uid="uid://cwom1hslabfkw" path="res://Scenes/ui.tscn" id="3_wfgnv"]
+[ext_resource type="PackedScene" uid="uid://cj3qmyiskbd4t" path="res://Scenes/earth.tscn" id="5_77tsj"]
 [ext_resource type="Script" uid="uid://cy6bvvbaf4jfv" path="res://Scripts/camera.gd" id="5_mm0tc"]
 [ext_resource type="PackedScene" uid="uid://bu74mra7avieq" path="res://Scenes/star.tscn" id="5_wfgnv"]
 [ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="7_mm0tc"]
 [ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="8_6bbg4"]
-[ext_resource type="PackedScene" uid="uid://dc4tev0x8peey" path="res://Scenes/planet.tscn" id="9_77tsj"]
 [ext_resource type="Script" uid="uid://clqw3w6lpnj5p" path="res://Scripts/audio_stream_player.gd" id="10_77tsj"]
 
 [node name="Node2D" type="Node2D" unique_id=1220980816]
@@ -27,7 +27,7 @@ polygon = PackedVector2Array(-99.58203, 49.791077, -497.91064, 199.16425, -647.2
 [node name="Spawn_manager" type="Node2D" parent="." unique_id=198772676 node_paths=PackedStringArray("camera") groups=["planet_spawner"]]
 position = Vector2(-96, -19)
 script = ExtResource("8_6bbg4")
-planet_scene = ExtResource("9_77tsj")
+planet_scene = ExtResource("5_77tsj")
 spawn_interval = 8.0
 no_of_planets = 10
 spawn_distance = 400
