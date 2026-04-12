@@ -67,7 +67,6 @@ offset_right = -567.0
 offset_bottom = -316.99997
 
 [node name="Stars(toggle on build!)" type="Node2D" parent="." unique_id=1937725718]
-visible = false
 
 [node name="Node2D2" parent="Stars(toggle on build!)" unique_id=1533371481 instance=ExtResource("5_wfgnv")]
 position = Vector2(-481, 242)
