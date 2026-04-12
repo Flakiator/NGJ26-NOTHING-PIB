@@ -2,7 +2,7 @@ extends AnimationPlayer
 
 @onready var fade_rect: ColorRect = get_parent()
 @onready var fade_root: Control = fade_rect.get_parent()
-@onready var end_sprite: Sprite2D = fade_root.get_node("Sprite2D")
+@onready var end_sprite: AnimatedSprite2D = fade_root.get_node("Sprite2D")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

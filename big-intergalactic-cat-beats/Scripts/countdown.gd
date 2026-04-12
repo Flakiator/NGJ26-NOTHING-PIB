@@ -1,7 +1,7 @@
 extends Label
 @export var animation_scene: PackedScene
 @export var global_score = 0
-@export var score_threshold = 2
+@export var score_threshold = 3
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_score(global_score)

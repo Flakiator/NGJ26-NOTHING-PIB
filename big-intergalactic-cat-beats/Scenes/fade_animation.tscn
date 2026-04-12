@@ -1,7 +1,46 @@
 [gd_scene format=3 uid="uid://5fc8v7c27msc"]
 
 [ext_resource type="Script" uid="uid://lupro6wrx12" path="res://Scripts/fade_to_black.gd" id="1_3uyqv"]
-[ext_resource type="Texture2D" uid="uid://7bpcph82ss3b" path="res://Sprites/temp_star.png" id="2_x8706"]
+[ext_resource type="Texture2D" uid="uid://bkuu645yvuop5" path="res://Sprites/Frames/Nemo0.PNG" id="1_kqwks"]
+[ext_resource type="Texture2D" uid="uid://b3ek4ufmfmxws" path="res://Sprites/Frames/Nemo1.PNG" id="2_fu5qy"]
+[ext_resource type="Texture2D" uid="uid://cdie6kcr1nesi" path="res://Sprites/Frames/Nemo2.PNG" id="3_cykho"]
+[ext_resource type="Texture2D" uid="uid://c0jsnurc51l72" path="res://Sprites/Frames/Blink0.PNG" id="4_lg0ja"]
+[ext_resource type="Texture2D" uid="uid://bgv0uowv0a6ex" path="res://Sprites/Frames/Blink1.PNG" id="5_lmrvd"]
+[ext_resource type="Script" uid="uid://bdo2581j526ce" path="res://Scripts/outro_animation.gd" id="6_fu5qy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kmo5v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kqwks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_lg0ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lmrvd")
+}],
+"loop": false,
+"name": &"blink",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kqwks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fu5qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cykho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fu5qy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="Animation" id="Animation_3uyqv"]
 length = 0.001
@@ -115,9 +154,14 @@ grow_horizontal = 2
 grow_vertical = 2
 localize_numeral_system = false
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1791266774]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=2086915016]
 z_index = 2
-texture = ExtResource("2_x8706")
+scale = Vector2(0.6671296, 0.66712964)
+sprite_frames = SubResource("SpriteFrames_kmo5v")
+animation = &"blink"
+frame = 2
+frame_progress = 1.0
+script = ExtResource("6_fu5qy")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1497571645]
 modulate = Color(1, 1, 1, 0)
