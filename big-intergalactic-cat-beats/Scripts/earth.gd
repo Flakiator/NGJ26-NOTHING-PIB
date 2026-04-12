@@ -1,8 +1,15 @@
 extends Sprite2D
 
 var files = [
-	preload("res://Sprites/Planets/earth.png"),
-	preload("res://Sprites/Planets/porple_planet.png")
+	preload("res://Sprites/Planets/earth.PNG"),
+	preload("res://Sprites/Planets/porple_planet.png"),
+	preload("res://Sprites/Planets/planet_bubble.PNG"),
+	preload("res://Sprites/Planets/planet_blue.PNG"),
+	preload("res://Sprites/Planets/planet_daisy.PNG"),
+	preload("res://Sprites/Planets/planet_rabbit.PNG"),
+	preload("res://Sprites/Planets/planet_saturn.PNG"),
+	preload("res://Sprites/Planets/planet_sauron.PNG")
+	
 ]
 
 var random_speed: float

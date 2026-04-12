@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://cdie6kcr1nesi"
-=======
-uid="uid://cgenx80umvb6l"
->>>>>>> main
-path="res://.godot/imported/Nemo2.PNG-3c54b72f86e1a901d08dc769e6703c2b.ctex"
+uid="uid://bhc2c487wyrhd"
+path="res://.godot/imported/planet_saturn.PNG-df76ab6770d008f2cdfaf0eecb7047d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Frames/Nemo2.PNG"
-dest_files=["res://.godot/imported/Nemo2.PNG-3c54b72f86e1a901d08dc769e6703c2b.ctex"]
+source_file="res://Sprites/Planets/planet_saturn.PNG"
+dest_files=["res://.godot/imported/planet_saturn.PNG-df76ab6770d008f2cdfaf0eecb7047d3.ctex"]
 
 [params]
 
