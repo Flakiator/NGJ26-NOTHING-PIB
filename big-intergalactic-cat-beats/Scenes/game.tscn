@@ -25,6 +25,7 @@ parameters/looping = true
 script = ExtResource("5_wowpa")
 
 [node name="fade_in_ploygons" type="Polygon2D" parent="." unique_id=2117076745]
+z_index = 10
 color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(21575, 16208, 25310, -26159, -36481, -21357, -37121, 20477)
 script = ExtResource("6_i6g32")
