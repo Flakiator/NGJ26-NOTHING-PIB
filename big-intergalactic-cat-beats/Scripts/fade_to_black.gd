@@ -3,13 +3,9 @@ extends AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	play("fade_to_black")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-func play_animation() -> void:
-	play("fade_to_black")
-	

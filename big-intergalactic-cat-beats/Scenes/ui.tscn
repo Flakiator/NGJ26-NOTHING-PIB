@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwom1hslabfkw"]
 
 [ext_resource type="Script" uid="uid://b66wu1pye4yhe" path="res://Scripts/countdown.gd" id="1_jxero"]
+[ext_resource type="PackedScene" uid="uid://5fc8v7c27msc" path="res://Scenes/fade_animation.tscn" id="2_qdvrb"]
 
 [node name="UI" type="Control" unique_id=571064923]
 layout_mode = 3
@@ -19,3 +20,4 @@ theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 40
 text = "Planets:"
 script = ExtResource("1_jxero")
+end_cutscene = ExtResource("2_qdvrb")

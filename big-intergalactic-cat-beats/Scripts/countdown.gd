@@ -1,7 +1,9 @@
 extends Label
 
 @export var global_score = 0
-var score_threshold = 10
+@export var end_cutscene: PackedScene
+var end_countdown = 5
+var score_threshold = 3
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_score(global_score)
@@ -24,4 +26,6 @@ func increase_score():
 	if global_score > score_threshold:
 		stars.no_of_planets = 0
 		planets.no_of_planets = 0
+		await get_tree().create_timer(end_countdown).timeout
+		get_parent().add_child(end_cutscene.instantiate())
 	stars.spawn_interval += 0.02
