@@ -11,6 +11,7 @@ func _ready() -> void:
 	if not get_viewport().size_changed.is_connected(_fit_to_viewport):
 		get_viewport().size_changed.connect(_fit_to_viewport)
 	play("fade_to_black")
+	await get_tree().create_timer(1).timeout
 	fade_root.set_visible(true)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
