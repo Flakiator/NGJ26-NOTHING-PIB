@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://b2ki4gk8ilu8i"]
 
 [ext_resource type="Script" uid="uid://b8h3epkclngse" path="res://Scripts/cat.gd" id="1_0xcsw"]
+[ext_resource type="Texture2D" uid="uid://cwvxbbfrg6lrl" path="res://Sprites/Player_Nemotito/Nemo_Float_Reach.PNG" id="1_mm0tc"]
+[ext_resource type="PackedScene" uid="uid://dq4wy34x3p1pn" path="res://Scenes/kaboom.tscn" id="3_6bbg4"]
 [ext_resource type="PackedScene" uid="uid://cwom1hslabfkw" path="res://Scenes/ui.tscn" id="3_wfgnv"]
 [ext_resource type="Script" uid="uid://cy6bvvbaf4jfv" path="res://Scripts/camera.gd" id="5_mm0tc"]
-[ext_resource type="Texture2D" uid="uid://cj2tb1trbag12" path="res://Sprites/gatito.png" id="5_sdt0o"]
 [ext_resource type="PackedScene" uid="uid://bu74mra7avieq" path="res://Scenes/star.tscn" id="5_wfgnv"]
 [ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="7_mm0tc"]
 [ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="8_6bbg4"]
@@ -13,8 +14,9 @@
 
 [node name="gatito" type="Sprite2D" parent="." unique_id=986089347 groups=["player"]]
 scale = Vector2(0.05, 0.05)
-texture = ExtResource("5_sdt0o")
+texture = ExtResource("1_mm0tc")
 script = ExtResource("1_0xcsw")
+explosion = ExtResource("3_6bbg4")
 
 [node name="Area2D" type="Area2D" parent="gatito" unique_id=1981761741]
 

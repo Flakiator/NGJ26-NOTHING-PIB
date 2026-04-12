@@ -19,7 +19,6 @@ script/source = "extends CollisionShape2D
 
 [node name="Earth" type="Sprite2D" parent="." unique_id=779517482 groups=["planets"]]
 scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_ytj11")
 script = ExtResource("2_ytj11")
 
 [node name="landed_collision_area" type="Area2D" parent="Earth" unique_id=1617969176]

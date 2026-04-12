@@ -6,5 +6,6 @@ func _physics_process(delta: float) -> void:
 		return
 	var cat =  get_overlapping_areas()[idx].get_parent()
 	if not cat.planet:
+		cat.change_texture("res://Sprites/Player_Nemotito/Nemo_Sit.PNG")
 		cat.planet = self.get_parent()
 		cat.reparent(self.get_parent())
