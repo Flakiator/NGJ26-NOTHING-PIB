@@ -67,3 +67,384 @@ offset_left = -567.0
 offset_top = -316.99997
 offset_right = -567.0
 offset_bottom = -316.99997
+
+[node name="Stars(toggle on build!)" type="Node2D" parent="." unique_id=1937725718]
+visible = false
+
+[node name="Node2D2" parent="Stars(toggle on build!)" unique_id=1533371481 instance=ExtResource("5_wfgnv")]
+position = Vector2(-481, 242)
+
+[node name="Node2D3" parent="Stars(toggle on build!)" unique_id=400930340 instance=ExtResource("5_wfgnv")]
+position = Vector2(-548, 302)
+
+[node name="Node2D4" parent="Stars(toggle on build!)" unique_id=423773392 instance=ExtResource("5_wfgnv")]
+position = Vector2(-553, 221)
+
+[node name="Node2D5" parent="Stars(toggle on build!)" unique_id=1042376524 instance=ExtResource("5_wfgnv")]
+position = Vector2(-592, 284)
+
+[node name="Node2D6" parent="Stars(toggle on build!)" unique_id=802883237 instance=ExtResource("5_wfgnv")]
+position = Vector2(-562, 103)
+
+[node name="Node2D7" parent="Stars(toggle on build!)" unique_id=438940463 instance=ExtResource("5_wfgnv")]
+position = Vector2(-382, 86)
+
+[node name="Node2D8" parent="Stars(toggle on build!)" unique_id=1677208043 instance=ExtResource("5_wfgnv")]
+position = Vector2(-342, 285)
+
+[node name="Node2D9" parent="Stars(toggle on build!)" unique_id=998306464 instance=ExtResource("5_wfgnv")]
+position = Vector2(-138, 242)
+
+[node name="Node2D10" parent="Stars(toggle on build!)" unique_id=1116497632 instance=ExtResource("5_wfgnv")]
+position = Vector2(-205, 302)
+
+[node name="Node2D11" parent="Stars(toggle on build!)" unique_id=2048206169 instance=ExtResource("5_wfgnv")]
+position = Vector2(-324, 204)
+
+[node name="Node2D12" parent="Stars(toggle on build!)" unique_id=57655197 instance=ExtResource("5_wfgnv")]
+position = Vector2(-249, 284)
+
+[node name="Node2D13" parent="Stars(toggle on build!)" unique_id=776164724 instance=ExtResource("5_wfgnv")]
+position = Vector2(-219, 103)
+
+[node name="Node2D14" parent="Stars(toggle on build!)" unique_id=1488546008 instance=ExtResource("5_wfgnv")]
+position = Vector2(-39, 86)
+
+[node name="Node2D15" parent="Stars(toggle on build!)" unique_id=406339834 instance=ExtResource("5_wfgnv")]
+position = Vector2(1, 285)
+
+[node name="Node2D16" parent="Stars(toggle on build!)" unique_id=1479713863 instance=ExtResource("5_wfgnv")]
+position = Vector2(-480, -15)
+
+[node name="Node2D17" parent="Stars(toggle on build!)" unique_id=881190324 instance=ExtResource("5_wfgnv")]
+position = Vector2(-547, 45)
+
+[node name="Node2D18" parent="Stars(toggle on build!)" unique_id=52314542 instance=ExtResource("5_wfgnv")]
+position = Vector2(-552, -36)
+
+[node name="Node2D19" parent="Stars(toggle on build!)" unique_id=202951325 instance=ExtResource("5_wfgnv")]
+position = Vector2(-402, -56)
+
+[node name="Node2D20" parent="Stars(toggle on build!)" unique_id=438358875 instance=ExtResource("5_wfgnv")]
+position = Vector2(-520, -275)
+
+[node name="Node2D21" parent="Stars(toggle on build!)" unique_id=981732450 instance=ExtResource("5_wfgnv")]
+position = Vector2(-460, -160)
+
+[node name="Node2D22" parent="Stars(toggle on build!)" unique_id=1952333910 instance=ExtResource("5_wfgnv")]
+position = Vector2(-341, 28)
+
+[node name="Node2D23" parent="Stars(toggle on build!)" unique_id=1280533657 instance=ExtResource("5_wfgnv")]
+position = Vector2(156, 270)
+
+[node name="Node2D24" parent="Stars(toggle on build!)" unique_id=690683548 instance=ExtResource("5_wfgnv")]
+position = Vector2(89, 330)
+
+[node name="Node2D25" parent="Stars(toggle on build!)" unique_id=1890497602 instance=ExtResource("5_wfgnv")]
+position = Vector2(5, 209)
+
+[node name="Node2D26" parent="Stars(toggle on build!)" unique_id=528502117 instance=ExtResource("5_wfgnv")]
+position = Vector2(45, 312)
+
+[node name="Node2D27" parent="Stars(toggle on build!)" unique_id=1854095362 instance=ExtResource("5_wfgnv")]
+position = Vector2(75, 131)
+
+[node name="Node2D28" parent="Stars(toggle on build!)" unique_id=606851661 instance=ExtResource("5_wfgnv")]
+position = Vector2(255, 114)
+
+[node name="Node2D29" parent="Stars(toggle on build!)" unique_id=1596464849 instance=ExtResource("5_wfgnv")]
+position = Vector2(295, 313)
+
+[node name="Node2D30" parent="Stars(toggle on build!)" unique_id=214236805 instance=ExtResource("5_wfgnv")]
+position = Vector2(452, 171)
+
+[node name="Node2D31" parent="Stars(toggle on build!)" unique_id=478024480 instance=ExtResource("5_wfgnv")]
+position = Vector2(148, 59)
+
+[node name="Node2D32" parent="Stars(toggle on build!)" unique_id=1143544421 instance=ExtResource("5_wfgnv")]
+position = Vector2(380, 150)
+
+[node name="Node2D33" parent="Stars(toggle on build!)" unique_id=159905772 instance=ExtResource("5_wfgnv")]
+position = Vector2(204, 220)
+
+[node name="Node2D34" parent="Stars(toggle on build!)" unique_id=1175644900 instance=ExtResource("5_wfgnv")]
+position = Vector2(371, 32)
+
+[node name="Node2D35" parent="Stars(toggle on build!)" unique_id=963059909 instance=ExtResource("5_wfgnv")]
+position = Vector2(551, 15)
+
+[node name="Node2D36" parent="Stars(toggle on build!)" unique_id=1338076330 instance=ExtResource("5_wfgnv")]
+position = Vector2(591, 214)
+
+[node name="Node2D37" parent="Stars(toggle on build!)" unique_id=2020571987 instance=ExtResource("5_wfgnv")]
+position = Vector2(53, -193)
+
+[node name="Node2D38" parent="Stars(toggle on build!)" unique_id=2065936626 instance=ExtResource("5_wfgnv")]
+position = Vector2(74, -74)
+
+[node name="Node2D39" parent="Stars(toggle on build!)" unique_id=52798758 instance=ExtResource("5_wfgnv")]
+position = Vector2(158, -242)
+
+[node name="Node2D40" parent="Stars(toggle on build!)" unique_id=1559703806 instance=ExtResource("5_wfgnv")]
+position = Vector2(-58, -151)
+
+[node name="Node2D41" parent="Stars(toggle on build!)" unique_id=1565940834 instance=ExtResource("5_wfgnv")]
+position = Vector2(-28, -332)
+
+[node name="Node2D42" parent="Stars(toggle on build!)" unique_id=1901493942 instance=ExtResource("5_wfgnv")]
+position = Vector2(152, -349)
+
+[node name="Node2D43" parent="Stars(toggle on build!)" unique_id=1933780194 instance=ExtResource("5_wfgnv")]
+position = Vector2(192, -150)
+
+[node name="Node2D44" parent="Stars(toggle on build!)" unique_id=681836266 instance=ExtResource("5_wfgnv")]
+position = Vector2(380, -97)
+
+[node name="Node2D45" parent="Stars(toggle on build!)" unique_id=1683289097 instance=ExtResource("5_wfgnv")]
+position = Vector2(313, -37)
+
+[node name="Node2D46" parent="Stars(toggle on build!)" unique_id=86050064 instance=ExtResource("5_wfgnv")]
+position = Vector2(388, -174)
+
+[node name="Node2D47" parent="Stars(toggle on build!)" unique_id=1694564486 instance=ExtResource("5_wfgnv")]
+position = Vector2(269, -55)
+
+[node name="Node2D48" parent="Stars(toggle on build!)" unique_id=854676812 instance=ExtResource("5_wfgnv")]
+position = Vector2(299, -236)
+
+[node name="Node2D49" parent="Stars(toggle on build!)" unique_id=623367458 instance=ExtResource("5_wfgnv")]
+position = Vector2(479, -253)
+
+[node name="Node2D50" parent="Stars(toggle on build!)" unique_id=1948751808 instance=ExtResource("5_wfgnv")]
+position = Vector2(519, -54)
+
+[node name="Node2D51" parent="Stars(toggle on build!)" unique_id=2004256428 instance=ExtResource("5_wfgnv")]
+position = Vector2(497, 261)
+
+[node name="Node2D52" parent="Stars(toggle on build!)" unique_id=210314219 instance=ExtResource("5_wfgnv")]
+position = Vector2(430, 321)
+
+[node name="Node2D53" parent="Stars(toggle on build!)" unique_id=888127764 instance=ExtResource("5_wfgnv")]
+position = Vector2(425, 240)
+
+[node name="Node2D54" parent="Stars(toggle on build!)" unique_id=839384867 instance=ExtResource("5_wfgnv")]
+position = Vector2(386, 303)
+
+[node name="Node2D55" parent="Stars(toggle on build!)" unique_id=417145708 instance=ExtResource("5_wfgnv")]
+position = Vector2(472, 61)
+
+[node name="Node2D56" parent="Stars(toggle on build!)" unique_id=1197933454 instance=ExtResource("5_wfgnv")]
+position = Vector2(596, 105)
+
+[node name="Node2D57" parent="Stars(toggle on build!)" unique_id=1355806810 instance=ExtResource("5_wfgnv")]
+position = Vector2(636, 304)
+
+[node name="Node2D58" parent="Stars(toggle on build!)" unique_id=593832980 instance=ExtResource("5_wfgnv")]
+position = Vector2(-202, -114)
+
+[node name="Node2D59" parent="Stars(toggle on build!)" unique_id=1500423014 instance=ExtResource("5_wfgnv")]
+position = Vector2(-135, -7)
+
+[node name="Node2D60" parent="Stars(toggle on build!)" unique_id=1674360264 instance=ExtResource("5_wfgnv")]
+position = Vector2(-274, -135)
+
+[node name="Node2D61" parent="Stars(toggle on build!)" unique_id=1499251369 instance=ExtResource("5_wfgnv")]
+position = Vector2(-313, -72)
+
+[node name="Node2D62" parent="Stars(toggle on build!)" unique_id=1242392359 instance=ExtResource("5_wfgnv")]
+position = Vector2(-283, -253)
+
+[node name="Node2D63" parent="Stars(toggle on build!)" unique_id=978471278 instance=ExtResource("5_wfgnv")]
+position = Vector2(-103, -270)
+
+[node name="Node2D64" parent="Stars(toggle on build!)" unique_id=1616941780 instance=ExtResource("5_wfgnv")]
+position = Vector2(-63, -71)
+
+[node name="Node2D65" parent="Stars(toggle on build!)" unique_id=219889784 instance=ExtResource("5_wfgnv")]
+position = Vector2(163, 231)
+
+[node name="Node2D66" parent="Stars(toggle on build!)" unique_id=1503460345 instance=ExtResource("5_wfgnv")]
+position = Vector2(96, 291)
+
+[node name="Node2D67" parent="Stars(toggle on build!)" unique_id=1407728351 instance=ExtResource("5_wfgnv")]
+position = Vector2(91, 210)
+
+[node name="Node2D68" parent="Stars(toggle on build!)" unique_id=802860860 instance=ExtResource("5_wfgnv")]
+position = Vector2(52, 273)
+
+[node name="Node2D69" parent="Stars(toggle on build!)" unique_id=601044594 instance=ExtResource("5_wfgnv")]
+position = Vector2(82, 92)
+
+[node name="Node2D70" parent="Stars(toggle on build!)" unique_id=96362739 instance=ExtResource("5_wfgnv")]
+position = Vector2(262, 75)
+
+[node name="Node2D71" parent="Stars(toggle on build!)" unique_id=1602673862 instance=ExtResource("5_wfgnv")]
+position = Vector2(302, 274)
+
+[node name="Node2D72" parent="Stars(toggle on build!)" unique_id=1982638005 instance=ExtResource("5_wfgnv")]
+position = Vector2(506, 231)
+
+[node name="Node2D73" parent="Stars(toggle on build!)" unique_id=2145178939 instance=ExtResource("5_wfgnv")]
+position = Vector2(439, 291)
+
+[node name="Node2D74" parent="Stars(toggle on build!)" unique_id=757685382 instance=ExtResource("5_wfgnv")]
+position = Vector2(320, 193)
+
+[node name="Node2D75" parent="Stars(toggle on build!)" unique_id=429836519 instance=ExtResource("5_wfgnv")]
+position = Vector2(395, 273)
+
+[node name="Node2D76" parent="Stars(toggle on build!)" unique_id=1647593935 instance=ExtResource("5_wfgnv")]
+position = Vector2(425, 92)
+
+[node name="Node2D77" parent="Stars(toggle on build!)" unique_id=1217620736 instance=ExtResource("5_wfgnv")]
+position = Vector2(-562, 58)
+
+[node name="Node2D78" parent="Stars(toggle on build!)" unique_id=325670010 instance=ExtResource("5_wfgnv")]
+position = Vector2(-522, 257)
+
+[node name="Node2D79" parent="Stars(toggle on build!)" unique_id=25157132 instance=ExtResource("5_wfgnv")]
+position = Vector2(164, -26)
+
+[node name="Node2D80" parent="Stars(toggle on build!)" unique_id=167105596 instance=ExtResource("5_wfgnv")]
+position = Vector2(97, 34)
+
+[node name="Node2D81" parent="Stars(toggle on build!)" unique_id=222180 instance=ExtResource("5_wfgnv")]
+position = Vector2(92, -47)
+
+[node name="Node2D82" parent="Stars(toggle on build!)" unique_id=2024120947 instance=ExtResource("5_wfgnv")]
+position = Vector2(242, -67)
+
+[node name="Node2D83" parent="Stars(toggle on build!)" unique_id=589742099 instance=ExtResource("5_wfgnv")]
+position = Vector2(124, -286)
+
+[node name="Node2D84" parent="Stars(toggle on build!)" unique_id=1115140411 instance=ExtResource("5_wfgnv")]
+position = Vector2(184, -171)
+
+[node name="Node2D85" parent="Stars(toggle on build!)" unique_id=814381811 instance=ExtResource("5_wfgnv")]
+position = Vector2(303, 17)
+
+[node name="Node2D86" parent="Stars(toggle on build!)" unique_id=46286419 instance=ExtResource("5_wfgnv")]
+position = Vector2(-367, 242)
+
+[node name="Node2D87" parent="Stars(toggle on build!)" unique_id=1196308711 instance=ExtResource("5_wfgnv")]
+position = Vector2(-434, 302)
+
+[node name="Node2D88" parent="Stars(toggle on build!)" unique_id=1962419388 instance=ExtResource("5_wfgnv")]
+position = Vector2(-518, 181)
+
+[node name="Node2D89" parent="Stars(toggle on build!)" unique_id=1640960973 instance=ExtResource("5_wfgnv")]
+position = Vector2(-478, 284)
+
+[node name="Node2D90" parent="Stars(toggle on build!)" unique_id=1397154019 instance=ExtResource("5_wfgnv")]
+position = Vector2(-448, 103)
+
+[node name="Node2D91" parent="Stars(toggle on build!)" unique_id=886519195 instance=ExtResource("5_wfgnv")]
+position = Vector2(-268, 86)
+
+[node name="Node2D92" parent="Stars(toggle on build!)" unique_id=1158048569 instance=ExtResource("5_wfgnv")]
+position = Vector2(-228, 285)
+
+[node name="Node2D93" parent="Stars(toggle on build!)" unique_id=1289719294 instance=ExtResource("5_wfgnv")]
+position = Vector2(-71, 143)
+
+[node name="Node2D94" parent="Stars(toggle on build!)" unique_id=1446990748 instance=ExtResource("5_wfgnv")]
+position = Vector2(-375, 31)
+
+[node name="Node2D95" parent="Stars(toggle on build!)" unique_id=1256888198 instance=ExtResource("5_wfgnv")]
+position = Vector2(-143, 122)
+
+[node name="Node2D96" parent="Stars(toggle on build!)" unique_id=1052659373 instance=ExtResource("5_wfgnv")]
+position = Vector2(-319, 192)
+
+[node name="Node2D97" parent="Stars(toggle on build!)" unique_id=469057197 instance=ExtResource("5_wfgnv")]
+position = Vector2(-152, 4)
+
+[node name="Node2D98" parent="Stars(toggle on build!)" unique_id=708257555 instance=ExtResource("5_wfgnv")]
+position = Vector2(28, -13)
+
+[node name="Node2D99" parent="Stars(toggle on build!)" unique_id=1894030076 instance=ExtResource("5_wfgnv")]
+position = Vector2(68, 186)
+
+[node name="Node2D100" parent="Stars(toggle on build!)" unique_id=1517297643 instance=ExtResource("5_wfgnv")]
+position = Vector2(-470, -221)
+
+[node name="Node2D101" parent="Stars(toggle on build!)" unique_id=1035007715 instance=ExtResource("5_wfgnv")]
+position = Vector2(-449, -102)
+
+[node name="Node2D102" parent="Stars(toggle on build!)" unique_id=732785174 instance=ExtResource("5_wfgnv")]
+position = Vector2(-365, -270)
+
+[node name="Node2D103" parent="Stars(toggle on build!)" unique_id=1228815701 instance=ExtResource("5_wfgnv")]
+position = Vector2(-581, -179)
+
+[node name="Node2D104" parent="Stars(toggle on build!)" unique_id=1224951380 instance=ExtResource("5_wfgnv")]
+position = Vector2(-551, -360)
+
+[node name="Node2D105" parent="Stars(toggle on build!)" unique_id=1816068492 instance=ExtResource("5_wfgnv")]
+position = Vector2(-371, -377)
+
+[node name="Node2D106" parent="Stars(toggle on build!)" unique_id=202513340 instance=ExtResource("5_wfgnv")]
+position = Vector2(-331, -178)
+
+[node name="Node2D107" parent="Stars(toggle on build!)" unique_id=1634647783 instance=ExtResource("5_wfgnv")]
+position = Vector2(-143, -125)
+
+[node name="Node2D108" parent="Stars(toggle on build!)" unique_id=565195182 instance=ExtResource("5_wfgnv")]
+position = Vector2(-210, -65)
+
+[node name="Node2D109" parent="Stars(toggle on build!)" unique_id=566318656 instance=ExtResource("5_wfgnv")]
+position = Vector2(-135, -202)
+
+[node name="Node2D110" parent="Stars(toggle on build!)" unique_id=1428628206 instance=ExtResource("5_wfgnv")]
+position = Vector2(-254, -83)
+
+[node name="Node2D111" parent="Stars(toggle on build!)" unique_id=1472971391 instance=ExtResource("5_wfgnv")]
+position = Vector2(-224, -264)
+
+[node name="Node2D112" parent="Stars(toggle on build!)" unique_id=1906507722 instance=ExtResource("5_wfgnv")]
+position = Vector2(-44, -281)
+
+[node name="Node2D113" parent="Stars(toggle on build!)" unique_id=86474220 instance=ExtResource("5_wfgnv")]
+position = Vector2(-4, -82)
+
+[node name="Node2D114" parent="Stars(toggle on build!)" unique_id=641279357 instance=ExtResource("5_wfgnv")]
+position = Vector2(-26, 233)
+
+[node name="Node2D115" parent="Stars(toggle on build!)" unique_id=1175814943 instance=ExtResource("5_wfgnv")]
+position = Vector2(-93, 293)
+
+[node name="Node2D116" parent="Stars(toggle on build!)" unique_id=253217951 instance=ExtResource("5_wfgnv")]
+position = Vector2(-98, 212)
+
+[node name="Node2D117" parent="Stars(toggle on build!)" unique_id=1941435805 instance=ExtResource("5_wfgnv")]
+position = Vector2(-137, 275)
+
+[node name="Node2D118" parent="Stars(toggle on build!)" unique_id=836636571 instance=ExtResource("5_wfgnv")]
+position = Vector2(-51, 33)
+
+[node name="Node2D119" parent="Stars(toggle on build!)" unique_id=48723566 instance=ExtResource("5_wfgnv")]
+position = Vector2(73, 77)
+
+[node name="Node2D120" parent="Stars(toggle on build!)" unique_id=148275340 instance=ExtResource("5_wfgnv")]
+position = Vector2(113, 276)
+
+[node name="Node2D121" parent="Stars(toggle on build!)" unique_id=496893380 instance=ExtResource("5_wfgnv")]
+position = Vector2(442, -125)
+
+[node name="Node2D122" parent="Stars(toggle on build!)" unique_id=531581735 instance=ExtResource("5_wfgnv")]
+position = Vector2(509, -18)
+
+[node name="Node2D123" parent="Stars(toggle on build!)" unique_id=864804593 instance=ExtResource("5_wfgnv")]
+position = Vector2(370, -146)
+
+[node name="Node2D124" parent="Stars(toggle on build!)" unique_id=1105136184 instance=ExtResource("5_wfgnv")]
+position = Vector2(331, -83)
+
+[node name="Node2D125" parent="Stars(toggle on build!)" unique_id=515104884 instance=ExtResource("5_wfgnv")]
+position = Vector2(361, -264)
+
+[node name="Node2D126" parent="Stars(toggle on build!)" unique_id=1927519103 instance=ExtResource("5_wfgnv")]
+position = Vector2(541, -281)
+
+[node name="Node2D127" parent="Stars(toggle on build!)" unique_id=1934733350 instance=ExtResource("5_wfgnv")]
+position = Vector2(-586, -99)

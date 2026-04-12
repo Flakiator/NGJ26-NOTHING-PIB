@@ -15,6 +15,11 @@ run/main_scene="uid://dotlk3x70n3bh"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Sprites/icon.svg"
 
+[display]
+
+window/size/initial_position_type=4
+window/stretch/mode="canvas_items"
+
 [global_group]
 
 player=""
@@ -42,3 +47,4 @@ left_click={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.13885854, 0.13885854, 0.13885854, 1)

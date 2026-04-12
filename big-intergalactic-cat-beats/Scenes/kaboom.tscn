@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dq4wy34x3p1pn"]
 
-[ext_resource type="Script" uid="uid://b25a8imns088m" path="res://Scripts/kaboom.gd" id="1_k7v0i"]
+[ext_resource type="Script" path="res://Scripts/kaboom.gd" id="1_k7v0i"]
 [ext_resource type="Texture2D" uid="uid://bw2dw5ftol4t2" path="res://Sprites/Kaboom/Boom0.png" id="1_y5hlm"]
 [ext_resource type="Texture2D" uid="uid://btluduig6amkm" path="res://Sprites/Kaboom/Boom1.png" id="2_k7v0i"]
 [ext_resource type="Texture2D" uid="uid://cjku04cvvmd6j" path="res://Sprites/Kaboom/Boom2.png" id="3_p0syc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dy3sijoooyowk" path="res://Sprites/Kaboom/Boom4.png" id="5_5rsgn"]
 [ext_resource type="Texture2D" uid="uid://g7u80wl7td00" path="res://Sprites/Kaboom/Boom5.png" id="6_2xy4o"]
 [ext_resource type="Texture2D" uid="uid://bbjlpi6lhv1wt" path="res://Sprites/Kaboom/Boom6.png" id="7_5vmf6"]
+[ext_resource type="AudioStream" uid="uid://dseo8dcd1o3db" path="res://Audio/explosion03.ogg" id="9_p0syc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qf0ly"]
 animations = [{
@@ -46,3 +47,8 @@ animation = NodePath("AnimatedSprite2D")
 sprite_frames = SubResource("SpriteFrames_qf0ly")
 frame = 6
 frame_progress = 1.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1511075853]
+stream = ExtResource("9_p0syc")
+volume_db = -13.719
+autoplay = true
