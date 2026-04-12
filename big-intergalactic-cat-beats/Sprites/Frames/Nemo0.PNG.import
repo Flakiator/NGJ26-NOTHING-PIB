@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhj0eclns2xir"
-path="res://.godot/imported/earth.PNG-8687f9585a0d6c5fb5f2aaf28edcc825.ctex"
+uid="uid://wot75mbsv8b0"
+path="res://.godot/imported/Nemo0.PNG-2962f9683256c8073a7b95ccc520f333.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Planets/earth.PNG"
-dest_files=["res://.godot/imported/earth.PNG-8687f9585a0d6c5fb5f2aaf28edcc825.ctex"]
+source_file="res://Sprites/Frames/Nemo0.PNG"
+dest_files=["res://.godot/imported/Nemo0.PNG-2962f9683256c8073a7b95ccc520f333.ctex"]
 
 [params]
 

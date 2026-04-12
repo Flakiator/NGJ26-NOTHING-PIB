@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhj0eclns2xir"
-path="res://.godot/imported/earth.PNG-8687f9585a0d6c5fb5f2aaf28edcc825.ctex"
+uid="uid://b6ajyyo7h0jfa"
+path="res://.godot/imported/planet_daisy.PNG-c1e977d582c8d5c0f52cbda7999fd1db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Planets/earth.PNG"
-dest_files=["res://.godot/imported/earth.PNG-8687f9585a0d6c5fb5f2aaf28edcc825.ctex"]
+source_file="res://Sprites/Planets/planet_daisy.PNG"
+dest_files=["res://.godot/imported/planet_daisy.PNG-c1e977d582c8d5c0f52cbda7999fd1db.ctex"]
 
 [params]
 
