@@ -2,12 +2,22 @@
 
 [ext_resource type="AudioStream" uid="uid://egf41q6alv6k" path="res://Audio/space_ambience.ogg" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://b2ki4gk8ilu8i" path="res://Scenes/cat.tscn" id="3_3dryh"]
+[ext_resource type="Script" uid="uid://c6v8np56nysqh" path="res://Scripts/main_theme.gd" id="3_wrm1d"]
+[ext_resource type="AudioStream" uid="uid://cwv10epn4qi27" path="res://Audio/second_theme.ogg" id="4_3dryh"]
+[ext_resource type="Script" uid="uid://csk0enn5m5bca" path="res://Scripts/second_theme.gd" id="5_wowpa"]
 
 [node name="Game" type="Node2D" unique_id=1159610107]
 
 [node name="Cat" parent="." unique_id=1220980816 instance=ExtResource("3_3dryh")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1825576993]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1825576993 groups=["audio_streamers"]]
 stream = ExtResource("2_qxrlw")
 autoplay = true
 parameters/looping = true
+script = ExtResource("3_wrm1d")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1985416003 groups=["audio_streamers"]]
+stream = ExtResource("4_3dryh")
+volume_db = -20.0
+parameters/looping = true
+script = ExtResource("5_wowpa")

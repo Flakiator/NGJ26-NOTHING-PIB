@@ -25,3 +25,8 @@ func increase_score():
 		stars.no_of_planets = 0
 		planets.no_of_planets = 0
 	stars.spawn_interval += 0.02
+	
+	if global_score > score_threshold-1:
+		var streamers = get_tree().get_nodes_in_group("audio_streamers")
+		streamers[0].fade_out()
+		streamers[1].fade_in()

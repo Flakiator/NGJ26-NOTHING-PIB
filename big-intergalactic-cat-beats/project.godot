@@ -29,6 +29,7 @@ camera=""
 UI=""
 star_spawner=""
 planet_spawner=""
+audio_streamers=""
 
 [input]
 
