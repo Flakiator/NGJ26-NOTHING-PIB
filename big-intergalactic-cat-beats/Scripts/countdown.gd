@@ -1,7 +1,7 @@
 extends Label
 @export var animation_scene: PackedScene
 @export var global_score = 0
-@export var score_threshold = 3
+@export var score_threshold = 10
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_score(global_score)
@@ -20,14 +20,14 @@ func increase_score():
 	print(stars)
 	global_score += 1
 	set_score(global_score)
-	if global_score > score_threshold:
+	if global_score >= score_threshold:
 		stars.no_of_planets = 0
 		planets.no_of_planets = 0
 		await get_tree().create_timer(3).timeout
 		get_parent().add_child(animation_scene.instantiate())
 	stars.spawn_interval += 0.02
 	
-	if global_score > score_threshold-1:
+	if global_score >= score_threshold-1:
 		var streamers = get_tree().get_nodes_in_group("audio_streamers")
 		streamers[0].fade_out()
 		streamers[1].fade_in()
