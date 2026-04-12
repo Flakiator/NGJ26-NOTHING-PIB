@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cuil1elghi48a" path="res://Scenes/spawner.tscn" id="7_mm0tc"]
 [ext_resource type="Script" uid="uid://bxq1t1n0y76tx" path="res://Scripts/spawn_manager.gd" id="8_6bbg4"]
 [ext_resource type="PackedScene" uid="uid://dc4tev0x8peey" path="res://Scenes/planet.tscn" id="9_77tsj"]
+[ext_resource type="Script" uid="uid://clqw3w6lpnj5p" path="res://Scripts/audio_stream_player.gd" id="10_77tsj"]
 
 [node name="Node2D" type="Node2D" unique_id=1220980816]
 
@@ -448,3 +449,6 @@ position = Vector2(541, -281)
 
 [node name="Node2D127" parent="Stars(toggle on build!)" unique_id=1934733350 instance=ExtResource("5_wfgnv")]
 position = Vector2(-586, -99)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1754755441]
+script = ExtResource("10_77tsj")
