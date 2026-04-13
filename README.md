@@ -32,7 +32,9 @@ Charged jump | Left click (hold), then release
 **Applications**
 - [Godot](https://godotengine.org/) as game engine
 - [Pixquare](https://www.pixquare.art/) as pixel art program
+- [Procreate](https://procreate.com/) as art program
 
 **Assets**
-- Visual assets by the team
+- Visual assets by the team, except ...
+ - SNS Cut Out Florals (Procreate stamps)
 - Audio (music, sfx) were open sourced
